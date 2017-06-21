@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--app主题背景色-->
+    <color name="theme_main_color">#4ab2fc</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#EC5252</color>
+
+    <color name="red">#D93347</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black2b">#2B2B2B</color>
+    <color name="black3">#333333</color>
+    <color name="grayfc">#FCFCFC</color>
+    <color name="grayf0">#F0F0F0</color>
+    <color name="graye0">#E0E0E0</color>
+    <color name="graydo">#d0d0d0</color>
+    <color name="graybe">#BEBEBE</color>
+    <color name="gray33">#333333</color>
+    <color name="grayad">#ADADAD</color>
+
+    <color name="text_gray_color">#4f6980</color>
+    <color name="translucent_bg">#00000000</color>
+    <color name="translucent_7f">#7f000000</color>
+    <color name="main_color">#EC5252</color>
+
+    <color name="saturday_color">#ec5252</color>
+
+    <!--迁移color-->
+    <color name="white02">#05ffffff</color>
+    <color name="white04">#0Bffffff</color>
+    <color name="white06">#10ffffff</color>
+    <color name="white10">#1Affffff</color>
+    <color name="white20">#34ffffff</color>
+    <color name="white40">#67ffffff</color>
+    <color name="white50">#80ffffff</color>
+    <color name="white60">#99ffffff</color>
+    <color name="white70">#B2ffffff</color>
+    <color name="white80">#CCffffff</color>
+    <color name="white90">#EAffffff</color>
+    <color name="black06">#10000000</color>
+    <color name="black10">#1A000000</color>
+    <color name="black15">#27000000</color>
+    <color name="black20">#34000000</color>
+    <color name="black30">#4D000000</color>
+    <color name="black40">#67000000</color>
+    <color name="black60">#99000000</color>
+    <color name="black70">#B2000000</color>
+    <color name="black80">#CC000000</color>
+
+    <color name="grayeo">#E0E0E0</color>
+    <color name="grayfo">#F0F0F0</color>
+
+    <color name="text_lightgray_color">#CCCCCC</color>
+    <color name="calendarCurMonthDefaultTextColor">#FF1D1D26</color>
+    <color name="calendarHolidayTextColor">#06A9ED</color>
+    <color name="calendarNoMonthDefaultTextColor">#801D1D26</color>
+    <color name="calendarDefaultTextColor">#801D1D26</color>
+    <color name="calendarTodayCircleColor">#06A9ED</color>
+    <color name="calendarNoTodayCircleColor">#FF999999</color>
+    <color name="calendarTextColorNormal">#999999</color>
+    <color name="dialog_content_color">#696969</color>
+
+    <!--普通级段落信息 引导词文字颜色-->
+    <color name="common_text_color">#666666</color>
+    <!--重要级文本信息、标题信息文字颜色-->
+    <color name="title_text_color">#333333</color>
+    <!--辅助、次级文本信息文字颜色-->
+    <color name="assist_text_color">#999999</color>
+    <!--模块分割底色颜色-->
+    <color name="module_divide_color">#f4f4f4</color>
+    <!--背景边框颜色-->
+    <color name="solid_divide_color">#20ffffff</color>
+    <!--颜色较浅的分割线颜色-->
+    <color name="line_divede_color_light">#eeeeee</color>
+    <!--颜色较深的分割线颜色-->
+    <color name="line_divede_color_dark">#dddddd</color>
+    <!--颜色较深的分割线颜色-->
+    <color name="line_divede_F3">#F3F3F3</color>
+    <!-- 分割线颜色 -->
+    <color name="dividing_line">#e5e5e5</color>
+    <!--主题辅助色（关键字提示）-->
+    <color name="theme_assist">#4bc2d1</color>
+    <color name="divide_line">#fd7b7b</color>
+
+    <!-- 第三方登录 -->
+    <color name="login_weixin_color">#81D741</color>
+    <color name="login_qq_color">#12B7F5</color>
+    <color name="login_xinlang_color">#EC525D</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <!-- 老黄历 -->
+    <color name="red_ec5252">#EC5252</color>
+    <color name="red_ff0000">#FF0000</color>
+    <color name="blue_2c99d2">#2c99d2</color>
+    <color name="assist_text_color_bg">#44999999</color>
+    <color name="color15">#a5957b</color>
+    <color name="line_divede_color">#e3e3e3</color>
+    <color name="color3">#999999</color>
+
+    <!--资讯end-->
+</resources>

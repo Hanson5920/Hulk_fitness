@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="zone_textcolor_bg">#DDDDDD</color>
+    <color name="circle_name_selector_color">#cccccc</color>
+    <color name="container_background">#EBEBEB</color>
+    <color name="primary_text_white">#deffffff</color>
+    <color name="black_55">#555555</color>
+    <!--87%white-->
+    <color name="progress_bar_unfinished">#D4D4D4</color>
+    <color name="size_black_nine">#999999</color>
+    <color name="size_black_six">#666666</color>
+    <color name="size_black_three">#333333</color>
+    <color name="white_CC">#CCCCCC</color>
+    <color name="photo_text">#007aff</color>
+    <color name="High_light_gray">#f4f4f4</color>
+    <color name="size_black_6A">#6A6A6A</color>
+    <color name="background">#FFFFFF</color>
+    <color name="split_line">#11112233</color>
+    <color name="text1">#59B29C</color>
+    <color name="text2">#333333</color>
+
+    <color name="color1">#F0F0F0</color>
+    <color name="color2">#FFFFFF</color>
+    <color name="color3">#B0B0B0</color>
+    <color name="color4">#666666</color>
+    <color name="color5">#57C5E8</color>
+</resources>

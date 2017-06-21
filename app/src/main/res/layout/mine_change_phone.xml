@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jaydenxiao.common.commonwidget.MineTitleBar
+        android:id="@+id/mtb_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="已绑定手机号："
+            android:textColor="@color/size_black_6A"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/et_old_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:digits="0123456789"
+            android:paddingBottom="5dp"
+            android:paddingTop="20dp"
+            android:text="13145415151"
+            android:textColor="@color/size_black_6A"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp">
+
+
+        <EditText
+            android:id="@+id/et_old_password"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="输入原密码"
+            android:inputType="textPassword"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/size_black_nine"
+            android:textSize="14sp" />
+
+
+        <CheckBox
+            android:id="@+id/cb_get_old_password"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginTop="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:button="@null"
+            android:background="@drawable/bt_password_show" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_old_password"
+            android:background="#E5E5E5" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_set_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="输入新手机号"
+            android:inputType="phone"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/size_black_nine"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp">
+
+
+        <EditText
+            android:id="@+id/et_set_auth_code"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="验证码"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/size_black_nine"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_get_auth_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingRight="13dp"
+            android:paddingTop="20dp"
+            android:text="获取验证码"
+            android:textColor="@color/size_black_three"
+            android:textSize="12sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_get_auth_code"
+            android:background="#E5E5E5" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_change_phone_sure"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/buttonstyle_phone"
+        android:text="确定修改"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

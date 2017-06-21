@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f5">
+
+    <com.jaydenxiao.common.commonwidget.MineTitleBar
+        android:id="@+id/mtb_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_account_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mtb_account"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/civ_account_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="43dp"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/myphone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您已绑定手机号"
+            android:textColor="@color/size_black_six"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_account_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="51dp"
+            android:layout_marginTop="15dp"
+            android:text="1777****595"
+            android:textColor="@color/size_black_three"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_change_phone"
+                    android:layout_width="135dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonstyle_two"
+                    android:text="更换号码"
+                    android:textColor="@color/size_black_nine"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/bt_change_password"
+                    android:layout_width="135dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonstyle_two"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="更换密码"
+                    android:textColor="@color/size_black_nine"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_phone_exit_login"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/bt_change_password"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buttonstyle_two"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="#FF5E3A"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_account_version"
+        android:layout_below="@+id/ll_account_top"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#CCCCCC"
+        android:textSize="11sp"
+        android:text="V1.1.02" />
+</RelativeLayout>

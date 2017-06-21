@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:more="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_train_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_head"
+            android:layout_alignTop="@+id/rl_head"
+            android:scaleType="fitXY"
+            tools:src="@drawable/test" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_head"
+            android:layout_alignTop="@+id/rl_head"
+            android:background="@drawable/shape_black_background" />
+
+        <RelativeLayout
+            android:id="@+id/rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_train_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:text="背部入门训练" />
+
+
+            <TextView
+                android:id="@+id/tv_Level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_train_name"
+                android:layout_marginLeft="@dimen/dp50"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:minWidth="@dimen/dp80"
+                android:textColor="@color/white"
+                android:textSize="@dimen/train_list_16"
+                android:textStyle="bold"
+                tools:text="初级" />
+
+            <TextView
+                android:id="@+id/tv_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_Level"
+                android:layout_alignRight="@+id/tv_Level"
+                android:layout_below="@+id/tv_Level"
+                android:layout_marginBottom="@dimen/dp40"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="center"
+                android:text="难度"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_train_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_Level"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/train_list_16"
+                android:textStyle="bold"
+                tools:text="27" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_train_time"
+                android:layout_alignRight="@+id/tv_train_time"
+                android:layout_below="@+id/tv_train_time"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="center"
+                android:text="时长/分钟"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_train_calorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_Level"
+                android:layout_marginRight="@dimen/dp50"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/train_list_16"
+                android:textStyle="bold"
+                tools:text="67" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_train_calorie"
+                android:layout_alignRight="@+id/tv_train_calorie"
+                android:layout_below="@+id/tv_train_calorie"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="center"
+                android:text="@string/calorie"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <com.jaydenxiao.common.commonwidget.MoreTextView
+        android:id="@+id/lin_train_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:paddingRight="@dimen/left_right_margin"
+        android:paddingTop="10dp"
+        more:maxLine="3"
+        more:textColor="@color/text_color"
+        more:textSize="@dimen/sp_14" />
+
+    <include
+        layout="@layout/line_include"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_training_group_count"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/left_right_margin"
+        android:textColor="@color/text_color_detail"
+        android:textSize="@dimen/sp_14"
+        tools:text="共14组动作" />
+
+    <include
+        layout="@layout/line_include"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/left_right_margin" />
+
+</LinearLayout>

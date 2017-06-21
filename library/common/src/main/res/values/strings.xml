@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="net_error">网络访问错误，请稍后再试</string>
+    <string name="empty">空空如也</string>
+    <string name="loading">请稍后...</string>
+    <string name="reload">重新尝试</string>
+    <string name="no_net">网络不可用,请检查你的网络</string>
+
+    <string name="app_name">浩克健身</string>
+    <string name="recipes">食谱</string>
+    <string name="hulk">浩克健身</string>
+    <string name="find">发现</string>
+    <string name="mine">我</string>
+    <string name="my_account">账号安全</string>
+    <string name="my_information">编辑资料</string>
+    <string name="my_feedback">意见反馈</string>
+    <string name="my_feedback_up">提交</string>
+    <string name="my_password_change">更改密码</string>
+    <string name="my_phone_change">更换手机号</string>
+
+    <!--视频-->
+    <string name="videos">视频</string>
+    <string name="video_play_times">%1$s次播放</string>
+
+    <!--发现-->
+    <string name="photo_collections">图集：%1$s</string>
+    <string name="news_from">%1$s %2$s</string>
+
+    <string name="transition_photos">transition_animation_news_photos</string>
+    <string name="recipes_list">食材清单</string>
+
+    <string name="web_view">webview</string>
+    <string name="browser">用浏览器打开</string>
+    <string name="start_train">"开始训练"</string>
+    <string name="have_download">已下载%1$d%2$s</string>
+</resources>

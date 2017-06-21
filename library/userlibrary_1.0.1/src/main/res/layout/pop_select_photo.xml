@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#40000000"
+    >
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <!--拍照-->
+        <TextView
+            android:id="@+id/albums"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/setting_up_selector"
+            android:gravity="center"
+            android:text="从相册选择"
+            android:textColor="#0479FE"
+            android:textSize="18sp" />
+        <!--线-->
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@id/albums"
+            android:background="#D9D8D3" />
+        <!--从相册中选择-->
+        <TextView
+            android:id="@+id/photograph"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/line"
+            android:background="@drawable/setting_down_selector"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="#0479FE"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/photograph"
+            android:background="@drawable/setting_one_selector"
+            android:gravity="center"
+            android:text="取 消"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:textColor="#0479FE"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

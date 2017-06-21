@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <include layout="@layout/include_total_toolbar" />
+
+    <com.aspsine.irecyclerview.IRecyclerView
+        android:id="@+id/irc_traning_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_total_toolbar_ly"
+        app:loadMoreEnabled="true"
+        app:refreshEnabled="true"
+        app:refreshHeaderLayout="@layout/layout_irecyclerview_refresh_header" />
+
+    <com.jaydenxiao.common.commonwidget.LoadingTip
+        android:id="@+id/loadedTip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_total_toolbar_ly"
+        android:layout_gravity="center"
+        android:gravity="center" />
+</RelativeLayout>
+

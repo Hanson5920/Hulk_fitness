@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_divede_F3"
+    android:orientation="vertical">
+
+    <include layout="@layout/general_head_layout" />
+
+    <EditText
+        android:id="@+id/my_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@drawable/feedback_style"
+        android:gravity="top"
+        android:hint="请输入您宝贵的意见/建议"
+        android:paddingLeft="@dimen/dp6"
+        android:paddingTop="@dimen/dp5"
+        android:textColorHint="@color/assist_text_color"
+        android:maxLength="1000"
+        android:textSize="@dimen/sp16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/dividing_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp15"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/black2b"
+        android:text="联系我们" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/dividing_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商务合作: 5745027@QQ.COM"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp15"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/black2b"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/dividing_line" />
+
+</LinearLayout>

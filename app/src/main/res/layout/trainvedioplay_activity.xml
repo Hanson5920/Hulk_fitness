@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circleSeekBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.frank.ijkvideoplayer.widget.media.IjkVideoView
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.gz.hkjs.app.widget.ScaleSeekbar
+        android:id="@+id/scaleSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:thumb="@null"
+        android:progressDrawable="@drawable/po_seekbar"
+        android:maxHeight="1dp"
+        android:minHeight="1dp"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/element_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@id/scaleSeekbar"
+        android:visibility="gone"
+        android:layout_marginBottom="66dp"
+        android:background="@mipmap/home_execise_bg_study"
+        android:orientation="vertical">
+
+        <!-- 副标题 -->
+        <LinearLayout
+            android:id="@+id/subhead_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/dp8"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_play_page_icon"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/subhead_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/element_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subhead_layout"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="25dp"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+    <com.gz.hkjs.app.widget.CircleSeekBar
+        android:id="@+id/stepCircleSeekBar"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="46dp"
+        android:layout_marginLeft="46dp"
+        circleSeekBar:c_textSize="20sp"
+        circleSeekBar:c_textColor="@color/white"
+        circleSeekBar:progressWidth="7dp"
+        circleSeekBar:progressColor="#ff5e3a"
+        circleSeekBar:sProgressWidth="7dp"
+        circleSeekBar:sProgressColor="#885a4f"
+        circleSeekBar:startAngle="-90"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/home_execise_ico_3"
+        android:layout_above="@id/scaleSeekbar"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+    <!-- 暂停时的布局 -->
+    <RelativeLayout
+        android:id="@+id/pausingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/pause_close"
+            android:layout_width="@dimen/close_btn"
+            android:layout_height="@dimen/close_btn"
+            android:src="@mipmap/home_execise_btn_close"
+            android:scaleType="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pause_bgm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_btn_music_open"
+                android:layout_marginRight="33dp"/>
+
+            <ImageView
+                android:id="@+id/pause_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_execise_btn_menu" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="33dp">
+
+            <ImageView
+                android:id="@+id/previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/home_execise_btn_last"/>
+
+            <LinearLayout
+                android:id="@+id/playPauseLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgPlayPause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_execise_btn_pause"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/home_execise_btn_next"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/playPause"
+            android:layout_below="@id/btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="继续训练"
+            android:textColor="#666666"
+            android:drawablePadding="10dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_below="@id/playPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前："
+                android:textSize="16dp"
+                android:textColor="#666666"/>
+
+            <TextView
+                android:id="@+id/pause_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="腰肌拉伸"
+                android:textSize="18dp"
+                android:textColor="#666666"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/playchangeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:visibility="gone"/>
+
+    <include layout="@layout/trainvideo_rest_layout" />
+
+</RelativeLayout>

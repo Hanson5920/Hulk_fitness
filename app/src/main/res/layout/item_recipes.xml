@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:paddingTop="@dimen/dp3"
+    android:paddingBottom="@dimen/dp3"
+    android:layout_marginLeft="11dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alpha_05_black" />
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+
+        android:background="?attr/dayNightBackground">
+
+        <ImageView
+            android:id="@+id/id_item_recips_img"
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp5"
+            android:scaleType="centerCrop"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/id_item_recips_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/id_item_recips_img"
+            android:layout_toRightOf="@+id/id_item_recips_img"
+            android:paddingLeft="5dp"
+            android:textColor="@color/alpha_85_black"
+            android:textSize="@dimen/font_normal2"
+            tools:text="健身好食谱" />
+
+        <TextView
+            android:id="@+id/id_item_recips_energy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+              android:layout_alignBaseline="@id/id_item_recips_title"
+             android:ellipsize="end"
+            android:paddingRight="11dp"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/font_small"
+            tools:text="1000千卡" />
+
+        <TextView
+            android:id="@+id/id_item_recips_dsc"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@+id/id_item_recips_title"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/id_item_recips_img"
+            android:ellipsize="end"
+            android:lineSpacingExtra="4sp"
+            android:lines="2"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black40"
+            android:textSize="@dimen/font_small"
+            tools:text="习近平:吹响建设科技强国号角国号角国号角" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_below="@+id/id_item_recips_dsc"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/id_item_recips_img"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/id_item_recips_foodtag1"
+                android:layout_width="30dp"
+                android:layout_height="13dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_shape_recipes_detail_top"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/id_item_recips_foodtag2"
+                android:layout_width="30dp"
+                android:layout_height="13dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/id_item_recips_foodtag1"
+                android:background="@drawable/bg_shape_recipes_detail_top"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

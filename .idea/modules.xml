@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HulkFitness-master.iml" filepath="$PROJECT_DIR$/HulkFitness-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/common/common.iml" filepath="$PROJECT_DIR$/library/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkvideoplayer/ijkvideoplayer.iml" filepath="$PROJECT_DIR$/ijkvideoplayer/ijkvideoplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/irecyclerview/irecyclerview.iml" filepath="$PROJECT_DIR$/library/irecyclerview/irecyclerview.iml" />
+      <module fileurl="file://F:/AsFolder/js/jianshen/HulkFitness-master/library/jcvideoplayer/jcvideoplayer.iml" filepath="F:/AsFolder/js/jianshen/HulkFitness-master/library/jcvideoplayer/jcvideoplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/ruler_lib/ruler_lib.iml" filepath="$PROJECT_DIR$/library/ruler_lib/ruler_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/userlibrary_1.0.1/userlibrary_1.0.1.iml" filepath="$PROJECT_DIR$/library/userlibrary_1.0.1/userlibrary_1.0.1.iml" />
+    </modules>
+  </component>
+</project>

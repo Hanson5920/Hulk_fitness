@@ -1,0 +1,118 @@
+<resources>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="BaseAppTheme.Trans">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AnimationFade">
+        <!-- PopupWindow 左右弹出的效果-->
+        <item name="android:windowEnterAnimation">@anim/in_downorup</item>
+        <item name="android:windowExitAnimation">@anim/out_uptodown</item>
+    </style>
+
+    <!--我的界面的Textview布局-->
+    <style name="mine_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawablePadding">22dp</item>
+        <item name="android:textColor">@color/size_black_three</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="mine_RelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginRight">@dimen/left_right_margin</item>
+        <item name="android:layout_marginLeft">@dimen/left_right_margin</item>
+
+    </style>
+    <!--我的界面的View分割线布局-->
+    <style name="my_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">#E6E6E6</item>
+    </style>
+
+    <style name="mine_view_two">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">#F2F1F6</item>
+    </style>
+    <!--资料界面小布局-->
+    <style name="infor_rl_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+
+    </style>
+    <!--资料界面-->
+    <style name="infor_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/size_black_three</item>
+    </style>
+    <!--资料界面右边img-->
+    <style name="infor_right_img_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:drawableRight">@mipmap/myright</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:textColor">@color/size_black_nine</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!--资料界面单位颜色值-->
+    <style name="mine_information_text_unit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#C1C1C1</item>
+    </style>
+
+    <!--<style name="infor_text_style">-->
+    <!--<item name="android:layout_width">wrap_content</item>-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:textSize">12sp</item>-->
+    <!--<item name="android:layout_marginTop">10dp</item>-->
+    <!--<item name="android:textColor">@color/black</item>-->
+    <!--</style>-->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_layer_list</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowIsTranslucent">true</item> --> <!-- 透明背景不要了 -->
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="time_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+</resources>

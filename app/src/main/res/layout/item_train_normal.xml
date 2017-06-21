@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/news_summary_card_view"
+    app:cardElevation="2dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_root_train_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alpha_50_black"
+        app:dayNightBackgroundAttr="dayNightBackground">
+
+        <TextView
+            android:id="@+id/item_train_normal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="背部入门训练"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:id="@+id/item_train"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_train_normal_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp">
+
+            <TextView
+                android:id="@+id/item_train_normal_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_train_normal_title"
+                android:text="20分钟"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/item_train_normal_energy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_train_normal_title"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/item_train_normal_time"
+                android:text="70千卡"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_train_normal_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_train"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="28dp"
+            android:text="可拥有完美肩部线条，更好穿衣搭配"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

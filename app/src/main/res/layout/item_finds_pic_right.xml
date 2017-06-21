@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="?attr/dayNightBackground"
+    android:paddingBottom="@dimen/dp3"
+    android:paddingTop="@dimen/dp3">
+
+    <ImageView
+        android:id="@+id/news_summary_photo_iv"
+        android:layout_marginTop="@dimen/dp12"
+        android:layout_width="130dp"
+        android:layout_height="86dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp"
+        android:scaleType="centerCrop"
+        android:transitionName="@string/transition_photos"
+        tools:src="@mipmap/ic_launcher"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:layout_alignTop="@id/news_summary_photo_iv"
+
+        android:id="@+id/news_summary_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="11dp"
+        android:layout_marginRight="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp3"
+        android:layout_toLeftOf="@+id/news_summary_photo_iv"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="?attr/dayNightOneTextColor"
+        android:textSize="@dimen/font_normal2"
+        tools:text="习近平:吹响建设科技强国号角国号角国号角" />
+
+    <TextView
+        android:id="@+id/news_summary_digest_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news_summary_title_tv"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="@dimen/dp5"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/news_summary_photo_iv"
+        android:ellipsize="end"
+        android:lineSpacingExtra="4sp"
+        android:lines="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black40"
+        android:textSize="@dimen/font_small"
+        tools:text="科技是国之利器，中国人民生活要好，必须有强大科技。" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alpha_05_black" />
+</RelativeLayout>

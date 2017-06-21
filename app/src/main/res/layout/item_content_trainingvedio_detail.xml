@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_training_video_detail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alpha_60_white">
+
+
+
+        <LinearLayout
+            android:id="@+id/id_train_detail_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/train_detail_line"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_train_vedio_detail" />
+
+            <include layout="@layout/item_train_vedio_detail" />
+
+            <include layout="@layout/item_train_vedio_detail" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/id_train_detail_ly"
+            android:layout_marginTop="3dp" />
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

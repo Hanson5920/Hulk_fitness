@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/general_head_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/send_code_btn"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/send_code_button_gray"
+                android:text="@string/send_code"
+                android:gravity="center"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/sp16" />
+
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_toLeftOf="@id/send_code_btn"
+                android:background="@null"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sp16"
+                android:textColorHint="@color/assist_text_color" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/dividing_line" />
+
+        <EditText
+            android:id="@+id/register_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:background="@null"
+            android:hint="请输入短信验证码"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp16"
+            android:textColorHint="@color/assist_text_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/dividing_line" />
+
+        <Button
+            android:id="@+id/register_on_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@drawable/login_button"
+            android:paddingBottom="@dimen/dp1"
+            android:paddingTop="@dimen/dp1"
+            android:text="@string/the_next_step"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+
+    </LinearLayout>
+
+</LinearLayout>

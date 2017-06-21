@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/general_head_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/nickname_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:background="@color/white"
+            android:hint="请输入昵称"
+            android:inputType="text"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp10"
+            android:textSize="@dimen/sp16"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_text_color"
+            android:textColorHint="@color/assist_text_color" />
+
+        <TextView
+            android:id="@+id/nickname_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/assist_text_color"
+            android:text="@string/update_cancel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

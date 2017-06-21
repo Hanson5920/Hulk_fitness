@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">民间万年历</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="exit_app">再按一次退出程序</string>
+    <string name="app_wnl">万年历</string>
+    <string name="app_zodiac">黄历</string>
+    <string name="app_remind">提醒</string>
+    <string name="app_my">我的</string>
+    <string name="old_almanac">老黄历</string>
+
+
+    <string name="remind_festival">节日</string>
+    <string name="remind_birthday">生日</string>
+    <string name="remind_international_festival">国际节日</string>
+    <string name="remind_solar_terms">节气</string>
+    <string name="remind_holidays">节假日</string>
+
+    <!--异常状态 页面提示-->
+    <string name="check_network">检查网络</string>
+    <string name="refresh_page">刷新页面</string>
+    <string name="data_appear_abnormal">数据出现异常</string>
+    <string name="wait_loading_location">定位中...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="user_feedback_string">在这里输入您的宝贵反馈(10 一 100字之间)</string>
+    <string name="contact_information">QQ/邮箱/电话</string>
+    <string name="thankings_strig">感谢您对我们产品珍贵的反馈，我们将不断改进和完善！</string>
+
+    <string name="search_null">啥都没找到,请更换关键词</string>
+    <string name="search_none">空空如也</string>
+
+
+    <!-- time -->
+    <string name="year">年前</string>
+    <string name="month">月前</string>
+    <string name="day">天前</string>
+    <string name="hour">小时前</string>
+    <string name="min">分钟前</string>
+    <string name="sec">秒前</string>
+    <string name="justnow">刚刚</string>
+    <string name="yesterday">昨天</string>
+    <string name="the_day_before_yesterday">前天</string>
+    <string name="today">今天</string>
+    <string name="date_format">M月d日 HH:mm</string>
+    <string name="year_format">yyyy年 M月d日 HH:mm</string>
+
+
+    <string name="icon_old_almanac">&#xe609; 老黄历</string>
+    <string name="left_back">&#xe600;</string>
+    <string name="left_arrow">&#xe60d;</string>
+    <string name="right_arrow">&#xe60a;</string>
+    <string name="below_arrow">&#xe60b;</string>
+
+    <string name="icon_today">&#xe607;</string>
+    <string name="icon_jiari">&#xe608;</string>
+    <string name="icon_jieri">&#xe606;</string>
+    <string name="icon_share">&#xe605;</string>
+    <string name="icon_fierce">&#xe604;</string>
+    <string name="icon_jiri">&#xe603;</string>
+    <string name="icon_yi">&#xe602;</string>
+    <string name="icon_ji">&#xe601;</string>
+    <string name="icon_freshen">&#xe60c;</string>
+
+    <!-- iconfont  -->
+    <!-- 我的界面 -->
+    <string name="arrow_right">&#xe60a;</string>
+
+    <!-- 登录界面  -->
+    <string name="login_weixin">&#xe64e;</string>
+    <string name="login_qq">&#xe650;</string>
+    <string name="login_xinlang">&#xe64f;</string>
+    <string name="update_cancel">&#xe618;</string>
+
+    <string name="lc_wuxing">五行</string>
+    <string name="lc_chongsha">冲煞</string>
+    <string name="lc_zhishen">值神</string>
+    <string name="lc_scyj">时辰宜忌</string>
+    <string name="lc_jcses">建除十二神</string>
+    <string name="lc_esbxx">二十八星宿</string>
+    <string name="lc_jsyq">吉神宜趋</string>
+    <string name="lc_jrts">今日胎神</string>
+    <string name="lc_xsyj">凶神宜忌</string>
+    <string name="lc_pzbj">彭祖百忌</string>
+    <string name="lc_ckxdw">查看现代文</string>
+
+
+    <!--资讯-->
+    <string name="zx_loading">加载中…</string>
+    <string name="zx_loading_erro">加载失败！点击刷新</string>
+    <string name="error_no_net">网络未连接，请检查网络</string>
+
+    <!-- 用户中心 -->
+    <!-- 登录界面 -->
+    <string name="login_display">登录</string>
+    <string name="registered_account_display">注册账号</string>
+    <string name="forgot_password_display">忘记密码</string>
+    <string name="party_login_display">第三方登录</string>
+    <string name="weixin_display">微信</string>
+    <string name="qq_display">QQ</string>
+    <string name="weibo_display">新浪微博</string>
+    <!-- 注册界面 -->
+    <string name="the_next_step">下一步</string>
+    <string name="send_code">发验证码</string>
+    <string name="registr_complete">完成</string>
+    <string name="in_validation">正在验证码验证，请稍候...</string>
+    <string name="in_submit">提交中...</string>
+    <string name="in_login">登录中...</string>
+    <string name="in_upload">上传中...</string>
+    <string name="in_exit">退出中...</string>
+    <!-- 我的界面 -->
+    <string name="setting_clean">清理</string>
+    <string name="update_ok">确认</string>
+    <string name="mzw_set_clean_complete">清理完成</string>
+    <string name="clean_cache_immediately">是否立即清理缓存数据?</string>
+    <string name="dialog_checking_update_text">检查更新中...</string>
+    <string name="qrcode_notice_text">将二维码放入框内，即可自动扫描</string>
+    <string name="scan_text">二维码扫描</string>
+    <string name="scan_lamp_text">灯光</string>
+    <string name="camera_problem">抱歉，您相机出现问题。您可能需要重启设备。</string>
+    <string name="framwork_problem">二维码扫描暂时出现问题。您重启再试。</string>
+    <string name="checkversion_none">已是最新版本</string>
+    <string name="check_update_title">发现新版本</string>
+    <string name="msg_no_camera">找不到系统相机</string>
+    <string name="all_fragment">全部小程序</string>
+
+    <string name="delete_remind_content">确定要删除本条提醒吗？</string>
+    <!-- 权限相关 -->
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n请点击"设置"-"权限"-打开所需权限。\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+    <string name="settings">设置</string>
+
+
+    <string name="icon_add">&#xe653;</string>
+
+
+</resources>

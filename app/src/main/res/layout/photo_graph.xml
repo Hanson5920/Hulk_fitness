@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    tools:background="#40000000">
+
+    <!--拍照-->
+    <TextView
+        android:id="@+id/tv_albums"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/setting_up_selector"
+        android:gravity="center"
+        android:textColor="@color/photo_text"
+        android:textSize="18sp"
+        tools:text="从相册选择" />
+    <!--线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e3e3e3" />
+    <!--从相册中选择-->
+    <TextView
+        android:id="@+id/tv_photograph"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/setting_down_selector"
+        android:gravity="center"
+        android:textColor="@color/photo_text"
+        android:textSize="18sp"
+        tools:text="拍照" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/setting_one_selector"
+        android:gravity="center"
+        android:text="取 消"
+        android:textColor="@color/photo_text"
+        android:textSize="18sp" />
+
+</LinearLayout>

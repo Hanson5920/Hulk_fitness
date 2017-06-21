@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/bg_shape_gradient_data"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_times"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:letterSpacing="-0.05"
+                android:paddingTop="20dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="80sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="累计训练/分钟"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp">
+
+                <TextView
+                    android:id="@+id/id_home_data_qianka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center|left"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="减脂/千卡"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="28dp">
+
+                <TextView
+                    android:id="@+id/id_home_data_wancheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center|right"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="完成/次"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="28dp">
+
+                <TextView
+                    android:id="@+id/id_home_data_leiji_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center|left"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="累计/天"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alpha_25_black"
+        android:scrollbars="none">
+
+        <com.gz.hkjs.app.ui.main.linechart.BrokenLineCusVisitView
+            android:id="@+id/brokenline"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </HorizontalScrollView>
+</LinearLayout>

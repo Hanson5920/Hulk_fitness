@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/include_reci_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_include_recilist_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="牛油果"
+            android:textColor="@color/text_color_detail"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/id_include_recilist_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/id_include_recilist_food"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:text="500克"
+            android:textColor="@color/text_color_detail"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/id_include_recilist_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/alpha_15_black" />
+</LinearLayout>

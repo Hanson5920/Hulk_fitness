@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f5"
+    android:orientation="vertical">
+
+    <com.jaydenxiao.common.commonwidget.MineTitleBar
+        android:id="@+id/mtb_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/tv_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="反馈内容"
+        android:textColor="@color/size_black_three"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="16dp">
+
+        <EditText
+            android:id="@+id/et_feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@null"
+            android:layout_marginRight="15dp"
+            android:gravity="top"
+            android:hint="请写下你的意见或建议..."
+            android:textColor="@color/size_black_nine"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_feedback_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="27dp"
+            android:src="@mipmap/feedbackicon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_feedback_phone"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="你的联系方式"
+        android:textColor="@color/size_black_three"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/et_qq_email"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:hint="留下QQ、邮箱或手机等联系方式、方便联系你哦!"
+        android:paddingLeft="15dp"
+        android:textColor="@color/size_black_nine"
+        android:textSize="13sp" />
+
+</LinearLayout>

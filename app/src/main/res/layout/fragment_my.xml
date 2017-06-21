@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical">
+
+    <com.jaydenxiao.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb_mine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <View style="@style/mine_view_two" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <com.gz.hkjs.app.util.CircleImageView
+                    android:id="@+id/civ_user_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/meheadimg" />
+
+                <TextView
+                    android:id="@+id/tv_mine_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/civ_user_img"
+                    android:gravity="center"
+                    android:text="未登录" />
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/tv_mine_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="13dp"
+                    android:drawableRight="@mipmap/myright"
+                    android:gravity="center|right"
+                    android:text="立即登录"
+                    android:textColor="@color/size_black_nine"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_mine_information"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/tv_mine_name"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|right"
+                    android:drawablePadding="13dp"
+                    android:drawableRight="@mipmap/myright"
+                    android:padding="5dp"
+                    android:text="编辑资料"
+                    android:textColor="@color/size_black_nine"
+                    android:textSize="@dimen/thirteen_sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View style="@style/mine_view_two" />
+
+            <RelativeLayout
+                android:id="@+id/rl_collect"
+                style="@style/mine_RelativeLayout">
+
+                <TextView
+                    style="@style/mine_textview"
+                    android:drawableLeft="@mipmap/minecollect"
+                    android:gravity="center"
+                    android:text="收藏" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/myright" />
+            </RelativeLayout>
+
+            <View style="@style/mine_view_two" />
+
+            <RelativeLayout
+                android:id="@+id/rl_account"
+                style="@style/mine_RelativeLayout">
+
+                <TextView
+                    style="@style/mine_textview"
+                    android:drawableLeft="@mipmap/minesafe"
+                    android:gravity="center"
+                    android:text="账号安全" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/myright" />
+            </RelativeLayout>
+
+            <View style="@style/my_view" />
+
+            <RelativeLayout style="@style/mine_RelativeLayout">
+
+                <TextView
+                    style="@style/mine_textview"
+                    android:drawableLeft="@mipmap/minewifi"
+                    android:gravity="center"
+                    android:text="仅wifi下载" />
+
+                <com.jaydenxiao.common.commonwidget.SwitchView
+                    android:id="@+id/sv_mine_img"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:color_on="#4DD865" />
+
+            </RelativeLayout>
+
+            <View style="@style/my_view" />
+
+
+            <RelativeLayout style="@style/mine_RelativeLayout">
+
+                <TextView
+                    style="@style/mine_textview"
+                    android:drawableLeft="@mipmap/mineclear"
+                    android:gravity="center"
+                    android:text="清理缓存" />
+
+                <TextView
+                    android:id="@+id/tv_cache"
+                    android:layout_width="match_parent"
+                    android:gravity="right|center"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="351.1M"
+                    android:textColor="@color/size_black_six"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View style="@style/mine_view_two" />
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_score"-->
+            <!--style="@style/mine_RelativeLayout">-->
+
+            <!--<TextView-->
+            <!--style="@style/mine_textview"-->
+            <!--android:drawableLeft="@mipmap/minegrade"-->
+            <!--android:gravity="center"-->
+            <!--android:text="给我们评分" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@mipmap/myright" />-->
+            <!--</RelativeLayout>-->
+
+            <View style="@style/my_view" />
+
+            <RelativeLayout
+                android:id="@+id/rl_feedback"
+                style="@style/mine_RelativeLayout">
+
+                <TextView
+                    style="@style/mine_textview"
+                    android:drawableLeft="@mipmap/minefeedback"
+                    android:gravity="center"
+                    android:text="意见反馈" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/myright" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

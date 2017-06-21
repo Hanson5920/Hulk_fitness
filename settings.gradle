@@ -1,0 +1,6 @@
+include ':app', ':ijkvideoplayer'
+include ':library:common'
+include ':library:irecyclerview'
+include ':library:ruler_lib'
+include ':library:userlibrary_1.0.1'
+

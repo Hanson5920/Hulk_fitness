@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias 'jianshen'
+            keyPassword 'gz_js2017'
+            storeFile file('jianshen.jks')
+            storePassword 'gz_js2017'
+        }
+        release {
+            keyAlias 'jianshen'
+            keyPassword 'gz_js2017'
+            storeFile file('jianshen.jks')
+            storePassword 'gz_js2017'
+        }
+    }
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled true
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a','x86','x86_64','mips','mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "fffd4cb06f0d484e4bd30de5", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "Hulk_fitness_beta", //用户渠道统计的渠道名称
+        ]
+    }
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //apk命名
+            android.applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        //这里修改apk文件名
+                        def fileName = "HulkFitness-${defaultConfig.versionCode}-${defaultConfig.versionName}-${releaseTime()}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+        }
+    }
+    //设置虚拟机堆内存空间大小，避免在编译期间OOM
+    dexOptions {
+//        incremental true
+        javaMaxHeapSize "4g"
+    }
+    //打包不检查
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+    dexOptions {
+        preDexLibraries false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':library:irecyclerview')
+    compile project(':library:ruler_lib')
+    compile project(':library:userlibrary_1.0.1')
+    compile project(':ijkvideoplayer')
+
+    compile rootProject.ext.dependencies["materialdialog"]
+    compile rootProject.ext.dependencies["rxpermissions"]
+    //阿里云
+    compile rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+
+    compile 'cn.jiguang.sdk:jpush:3.0.6'
+    compile 'cn.jiguang.sdk:jcore:1.1.3'
+}

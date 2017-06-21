@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--长度-->
+    <!--常用-->
+    <!--tab的高度-->
+    <dimen name="tab_height">50dp</dimen>
+    <!--左右边间距-->
+    <dimen name="left_right_margin">10dp</dimen>
+
+
+    <!--以上是常用的-->
+
+
+    <dimen name="item_margin">8dp</dimen>
+    <dimen name="text_margin">10dp</dimen>
+    <dimen name="title_margin">10dp</dimen>
+    <dimen name="title_margin1">14dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!--  字体  -->
+
+    <!--主标题字体大小  方便统一修改标题大小-->
+    <dimen name="title_main">18sp</dimen>
+    <!--副标题字体大小-->
+    <dimen name="title_subhead">16sp</dimen>
+    <!--sp-->
+    <dimen name="thirteen_sp">13sp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+
+    <!--开始训练界面-->
+    <dimen name="train_list_title">24sp</dimen>
+    <dimen name="train_list_16">16sp</dimen>
+
+    <dimen name="close_btn">60dp</dimen>
+
+</resources>

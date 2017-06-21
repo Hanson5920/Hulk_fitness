@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">浩克健身</string>
+    <string name="recipes">食谱</string>
+    <string name="hulk">全民健身</string>
+    <string name="find">发现</string>
+    <string name="mine">个人中心</string>
+
+    <!--视频-->
+    <string name="videos">视频</string>
+    <string name="video_play_times">%1$s次播放</string>
+
+    <!--发现-->
+    <string name="photo_collections">图集：%1$s</string>
+    <string name="news_from">%1$s %2$s</string>
+
+    <string name="transition_photos">transition_animation_news_photos</string>
+    <string name="recipes_list">食材清单</string>
+
+    <string name="web_view">webview</string>
+    <string name="browser">用浏览器打开</string>
+    <string name="calorie">千卡</string>
+    <string name="my_treaty">用户协议</string>
+
+    <string name="train_tips">这是浩克健身最基础的训练，为零运动经的sdfdsfsdfsdfsdfsdfsdfsdfsd人打开健身之门,这是浩克健身最基础的训练，为零运动经的人打开健身之门,
+        这是浩克健身最基础的训练，为零运动经的人打开健身之门,这是浩克健身最基础的训练，为零运动经的人打开健身之门</string>
+
+    <string name="group_number">共%1$d组动作</string>
+    <string name="train_suggest">训练建议</string>
+    <string name="train_apparatus">训练器械</string>
+    <string name="train_people">适合人群</string>
+    <string name="train_attention">其他注意事项</string>
+
+    <string name="train_step_number">%1$s×%2$s次</string>
+    <string name="train_step_time">%1$s×%2$s秒</string>
+    <string name="train_rest">休息%1$s″</string>
+    <string name="hint">提示</string>
+    <string name="no_wifi_hint">温馨提示：非 Wi-Fi 环境下，播放视频会消耗较多流量，请开启 Wi-Fi</string>
+    <string name="flow_hint">温馨提示：非 Wi-Fi 环境下，播放视频会消耗较多流量,确认是否继续下载</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="exit_hint">再按一次，退出%1$s!</string>
+    <string name="next_action">下一组动作：</string>
+    <string name="rest_countdown">%1$s \"</string>
+    <string name="click_space_to_skip_the_rest">点击空白处可跳过休息</string>
+
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="date_select_item">日期选择控件</string>
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+    <string name="record">上传成功</string>
+    <string name="important_note">重要提示</string>
+    <string name="login_out">退出</string>
+    <string name="re_login">重新登录</string>
+    <string name="repeatlogin_message">你的账户于%1$s在另一移动设备登录，如非本人操作，则密码可能已经泄露，建议你立即更改密码</string>
+    <string name="find_detail_time">浩克健身&#032;&#032;|&#032;&#032;%1$s</string>
+
+
+</resources>
